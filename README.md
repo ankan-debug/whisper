@@ -100,6 +100,3 @@ whisper/
 ---
 
 ✅ Once you paste that, you're done with the base setup.
-
-Next up: **Testing locally OR expanding** (bonus features, GUI toggle switch, etc.). Just say the word and we roll 🛞💻
-```
