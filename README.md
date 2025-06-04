@@ -1,106 +1,109 @@
+Perfecto! 🧠 Let's keep building like pros on caffeine and ambition.
 
-
-## Whisper 🚀
-
-**Whisper** is a lightweight, terminal-based offline secure chat tool designed for PC and mobile (via Termux), enabling private communication over LAN, USB, Bluetooth, or phone hotspots — *no internet needed*. Perfect for security-conscious users who want fast, reliable, and encrypted messaging anywhere, anytime.
+Next up: the **README.md** — your tool’s *homepage, help desk, and brag board* all in one. Users see this first on GitHub, and it helps them understand how to install, use, and flex with WHISPER.
 
 ---
 
-## Features ✨
+### 📄 `README.md`
 
-* **Offline chat** via LAN (WiFi), USB tethering, Bluetooth, or phone hotspot
-* **End-to-end encryption** with a custom substitution cipher (SECRET mode)
-* **Emoji support** for expressive conversations
-* **Auto-delete messages** after 5 minutes (optional toggle)
-* **File transfer** over offline connections
-* **Dark/Light UI modes** for comfortable chatting
-* **Auto-response bot** (optional)
-* **Chat lock** for privacy protection
-* **Typing indicator** (optional, coming soon)
+Paste this into `README.md`:
+
+````markdown
+# 🔒 WHISPER: Offline Secure Chat App
+
+**WHISPER** is a minimalist Python-based offline chat tool that works across PC and mobile using Termux. You can chat securely using LAN, Wi-Fi hotspot, Bluetooth, or USB — even without internet!
 
 ---
 
-## How It Works ⚙️
+## 💡 Features
 
-Whisper runs entirely in your terminal on PC or mobile. Connect your devices via a shared LAN, USB, Bluetooth, or hotspot network — no internet required. Run the server script on one device, and the client script on the other. Enjoy secure, encrypted chatting in real-time with zero dependency on online services.
-
----
-
-## Installation 💻
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/ankan-debug/whisper.git  
-   cd whisper  
-   ```
-
-2. (Optional) Create a Python virtual environment:
-
-   ```bash
-   python -m venv venv  
-   source venv/bin/activate   # On Windows use `venv\Scripts\activate`  
-   ```
-
-3. Install requirements (if any, add later when you have external libs):
-
-   ```bash
-   pip install -r requirements.txt  
-   ```
+- 🗨️ Real-time chat between devices
+- 🛡️ Optional cipher-based secret mode (substitution cipher)
+- ⏲️ Auto-delete messages after 5 mins (toggleable)
+- 🌒 Light/Dark terminal mode
+- 📁 File transfer support (toggleable)
+- 🤖 Auto response (toggleable)
+- 🔐 Chat lock with PIN
+- 🖼️ Emoji support
+- 📱 Works on Termux and PC
 
 ---
 
-## Usage 🚀
+## 🧑‍💻 How to Use
 
-* **Start the server:**
+### 1. Clone the Repository
+```bash
+git clone https://github.com/ankan-debug/whisper
+cd whisper
+````
 
-  ```bash
-  python server.py  
-  ```
+### 2. Run Server on Receiver Device
 
-* **Start the client:**
+```bash
+python server.py
+```
 
-  ```bash
-  python client.py  
-  ```
+### 3. Run Client on Sender Device
 
-Follow on-screen prompts to connect devices and chat securely offline.
+```bash
+python client.py
+```
 
----
+### 4. Optional: Toggle Config
 
-## Configuration ⚙️
-
-Toggle features via `config.json`:
-
-* `auto_delete`: Enable/disable auto-delete messages
-* `file_transfer`: Enable/disable file transfer
-* `dark_mode`: Enable/disable dark mode UI
-* `auto_response`: Enable/disable auto chatbot replies
-* `secret_mode`: Enable/disable encryption (substitution cipher)
+Edit `config.json` to enable/disable features.
 
 ---
 
-## Contributions 🤝
+## 📦 Requirements
 
-Whisper is an open-source project. Contributions, suggestions, and bug reports are welcome! Feel free to fork, improve, and submit PRs.
-
----
-
-## License 📄
-
-Distributed under the MIT License. See `LICENSE` for details.
+* Python 3.8+
+* Works on Windows/Linux/Mac
+* Termux for Android support
 
 ---
 
-## Contact ✉️
+## 🔐 Secret Mode
 
-Created by Ankan Saha — Cybersecurity Enthusiast & Developer
-GitHub: [ankan-debug](https://github.com/ankan-debug)
+WHISPER uses a basic custom substitution cipher.
+To enable it:
 
-Email: sahaankan628@gmail.com
+```json
+"secret_mode": true
+```
+
+---
+
+## 📂 File Structure
+
+```
+whisper/
+├── client.py
+├── server.py
+├── cipher.py
+├── utils.py
+├── config.json
+└── README.md
+```
+
+---
+
+## 🧪 Future Add-ons
+
+* GUI for toggles (Tkinter or CLI-based switch)
+* QR-based peer connection
+* Custom emoji packs
+* Bluetooth/USB mode setup scripts
 
 ---
 
 ## ✨ Made with ❤️ by Ankan
 
+```
 
+---
+
+✅ Once you paste that, you're done with the base setup.
+
+Next up: **Testing locally OR expanding** (bonus features, GUI toggle switch, etc.). Just say the word and we roll 🛞💻
+```
