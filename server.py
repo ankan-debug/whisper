@@ -31,13 +31,24 @@ def broadcast(message, _client):
 def handle_client(client):
     while True:
         try:
-            message = client.recv(1024).decode()
+            data = client.recv(1024)
+            if not data:
+                break  # client disconnected
+
+            # Raw bytes debug
+            print(f"[🐞] Raw data: {repr(data)}")
+
+            message = data.decode(errors='ignore').strip()
 
             if config["secret_mode"]:
                 message = decrypt_message(message)
 
-            print(f"[💬] Received: {message}")
-            broadcast(message.encode(), client)
+            if message:
+                print(f"[💬] Received: {message}")
+                broadcast(message.encode(), client)
+            else:
+                print("[⚠️] Received empty or unrecognized data")
+
         except:
             clients.remove(client)
             client.close()
