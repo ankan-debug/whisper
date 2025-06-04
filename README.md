@@ -2,7 +2,6 @@
 
 ### 📄 `README.md`
 
-Paste this into `README.md`:
 
 ````markdown
 # 🔒 WHISPER: Offline Secure Chat App
@@ -97,6 +96,4 @@ whisper/
 
 ```
 
----
 
-✅ Once you paste that, you're done with the base setup.
