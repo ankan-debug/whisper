@@ -1,6 +1,6 @@
 ---
 
-# Whisper 🚀
+## Whisper 🚀
 
 **Whisper** is a lightweight, terminal-based offline secure chat tool designed for PC and mobile (via Termux), enabling private communication over LAN, USB, Bluetooth, or phone hotspots — *no internet needed*. Perfect for security-conscious users who want fast, reliable, and encrypted messaging anywhere, anytime.
 
@@ -96,6 +96,7 @@ Distributed under the MIT License. See `LICENSE` for details.
 
 Created by Ankan Saha — Cybersecurity Enthusiast & Developer
 GitHub: [ankan-debug](https://github.com/ankan-debug)
+
 Email: sahaankan628@gmail.com
 
 ---
