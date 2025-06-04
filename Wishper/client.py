@@ -8,7 +8,7 @@ from utils import load_config
 config = load_config()
 
 HOST = input("Enter recipient IP (e.g., 192.168.0.105): ")
-PORT = 9090
+PORT = 9999
 
 def main():
     print("[🟢] Whisper Client Started")
