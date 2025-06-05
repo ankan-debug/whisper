@@ -22,7 +22,8 @@ WHISPER is a minimalist Python-based offline chat tool that works across PC and 
 ### 🧑‍💻 How to Use
 
 ### 1. Clone the Repository
-```bash
+```
+bash
 git clone https://github.com/ankan-debug/whisper
 cd whisper
 ````
