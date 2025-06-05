@@ -1,5 +1,3 @@
-### 📄 `README.md`
-
 # 🔒 WHISPER: Offline Secure Chat App
 
 WHISPER is a minimalist Python-based offline chat tool that works across PC and mobile using Termux. You can chat securely using LAN, Wi-Fi hotspot, Bluetooth, or USB — even without internet!
